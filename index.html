@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printiums | Cetakan Korporat & Penjenamaan Premium</title>
+  <meta name="description" content="Laman web rasmi Printiums. Kami menawarkan perkhidmatan percetakan korporat premium bertaraf tinggi seperti pelekat label, banner, kad perniagaan, dan bahan pemasaran.">
+  
+  <!-- Google Fonts - Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-ms">
+  <!-- Glowing Background Effects -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Frosted Glass Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="brand">
+        <img src="logo.png" alt="Printiums Logo" class="brand-logo">
+        <span class="brand-name">Printiums</span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#hero">
+          <span lang="ms">Utama</span>
+          <span lang="en">Home</span>
+        </a>
+        <a href="#about">
+          <span lang="ms">Mengenai Kami</span>
+          <span lang="en">About Us</span>
+        </a>
+        <a href="#services">
+          <span lang="ms">Servis</span>
+          <span lang="en">Services</span>
+        </a>
+        <a href="#portfolio">
+          <span lang="ms">Portfolio</span>
+          <span lang="en">Portfolio</span>
+        </a>
+        <a href="#why-us">
+          <span lang="ms">Kelebihan</span>
+          <span lang="en">Why Us</span>
+        </a>
+        <a href="#testimonials">
+          <span lang="ms">Testimoni</span>
+          <span lang="en">Testimonials</span>
+        </a>
+        <a href="#contact">
+          <span lang="ms">Hubungi</span>
+          <span lang="en">Contact</span>
+        </a>
+      </nav>
+
+      <div class="navbar-actions">
+        <!-- Language Switcher Toggle -->
+        <div class="lang-switcher" id="langToggle">
+          <span class="lang-option active" data-lang="ms">MY</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" data-lang="en">EN</span>
+        </div>
+        
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-outline btn-nav">
+          <span lang="ms">Hubungi Kami</span>
+          <span lang="en">Get in Touch</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-container">
+      <a href="#hero" onclick="toggleMobileMenu()">
+        <span lang="ms">Utama</span>
+        <span lang="en">Home</span>
+      </a>
+      <a href="#about" onclick="toggleMobileMenu()">
+        <span lang="ms">Mengenai Kami</span>
+        <span lang="en">About Us</span>
+      </a>
+      <a href="#services" onclick="toggleMobileMenu()">
+        <span lang="ms">Servis</span>
+        <span lang="en">Services</span>
+      </a>
+      <a href="#portfolio" onclick="toggleMobileMenu()">
+        <span lang="ms">Portfolio</span>
+        <span lang="en">Portfolio</span>
+      </a>
+      <a href="#why-us" onclick="toggleMobileMenu()">
+        <span lang="ms">Kelebihan</span>
+        <span lang="en">Why Us</span>
+      </a>
+      <a href="#testimonials" onclick="toggleMobileMenu()">
+        <span lang="ms">Testimoni</span>
+        <span lang="en">Testimonials</span>
+      </a>
+      <a href="#contact" onclick="toggleMobileMenu()">
+        <span lang="ms">Hubungi</span>
+        <span lang="en">Contact</span>
+      </a>
+      <div class="mobile-lang-switcher" id="mobileLangToggle">
+        <span class="lang-option active" data-lang="ms">Bahasa Melayu</span>
+        <span class="lang-option" data-lang="en">English</span>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-block" onclick="toggleMobileMenu()">
+        <span lang="ms">Hubungi Kami</span>
+        <span lang="en">Contact Us</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge">
+            <i class="fa-solid fa-sparkles"></i>
+            <span lang="ms">Percetakan Korporat Premium</span>
+            <span lang="en">Premium Corporate Printing</span>
+          </div>
+          <h1>
+            <span lang="ms">Impak Warna <span class="text-gradient">Maksimum</span>, Cetakan Tanpa Batas</span>
+            <span lang="en">Maximum Color <span class="text-gradient">Impact</span>, Limitless Print</span>
+          </h1>
+          <p class="hero-desc">
+            <span lang="ms">Kami mentransformasikan identiti korporat anda ke dalam bentuk fizikal dengan ketepatan warna magenta yang cemerlang, material gred industri, dan kualiti kemasan premium yang memukau.</span>
+            <span lang="en">We transform your corporate identity into physical reality with brilliant magenta color precision, industrial-grade materials, and premium finishes that captivate.</span>
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">
+              <span lang="ms">Terokai Servis</span>
+              <span lang="en">Explore Services</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span lang="ms">Bincang Projek</span>
+              <span lang="en">Discuss Project</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-container">
+            <div class="card-glow"></div>
+            <img src="assets/hero-mockup.png" alt="Printiums Corporate Mockup" class="hero-img">
+            <div class="floating-badge badge-1">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <span class="badge-title">Ultra HD</span>
+                <span class="badge-sub">2400 DPI Print</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <span class="badge-title">Pantastik</span>
+                <span class="badge-sub">Fast Turnaround</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Statistics Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="section-subtitle">
+              <span lang="ms">MENGENAI PRINTIUMS</span>
+              <span lang="en">ABOUT PRINTIUMS</span>
+            </div>
+            <h2>
+              <span lang="ms">Rakan Kongsi Penjenamaan Fizikal Anda</span>
+              <span lang="en">Your Physical Branding Partner</span>
+            </h2>
+            <p>
+              <span lang="ms">Printiums Sdn Bhd ialah syarikat design, printing dan merchandise yang berpangkalan di Ampang, Selangor. Kami menyediakan perkhidmatan percetakan, custom merchandise, corporate gift, promotional items, t-shirt printing, banner, bunting dan bahan pemasaran untuk syarikat, organisasi serta event organizer di seluruh Malaysia.</span>
+              <span lang="en">Printiums Sdn Bhd is a design, printing, and merchandise company based in Ampang, Selangor. We provide printing services, custom merchandise, corporate gifts, promotional items, t-shirt printing, banners, buntings, and marketing materials for companies, organizations, and event organizers across Malaysia.</span>
+            </p>
+            <p>
+              <span lang="ms">Kami juga merupakan supplier merchandise konsert yang membantu artis dan penganjur menghasilkan merchandise berkualiti seperti t-shirt, tote bag, lanyard, poster dan pelbagai barangan promosi. Dengan gabungan kreativiti, kualiti dan penghantaran yang pantas, Printiums menjadi pilihan bagi pelanggan yang mencari printing service, corporate gift supplier dan merchandise supplier di Malaysia.</span>
+              <span lang="en">We are also a concert merchandise supplier, helping artists and organizers produce high-quality merchandise such as t-shirts, tote bags, lanyards, posters, and various promotional products. With a combination of creativity, quality, and fast delivery, Printiums is the preferred choice for clients seeking printing services, corporate gift suppliers, and merchandise suppliers in Malaysia.</span>
+            </p>
+          </div>
+          <div class="stats-container reveal">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-number" data-target="15000">0</span>
+                <span class="stat-plus">+</span>
+                <p class="stat-label">
+                  <span lang="ms">Projek Selesai</span>
+                  <span lang="en">Completed Projects</span>
+                </p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-plus">+</span>
+                <p class="stat-label">
+                  <span lang="ms">Klien Korporat</span>
+                  <span lang="en">Corporate Clients</span>
+                </p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="99">0</span>
+                <span class="stat-plus">%</span>
+                <p class="stat-label">
+                  <span lang="ms">Kepuasan Klien</span>
+                  <span lang="en">Client Satisfaction</span>
+                </p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="24">0</span>
+                <span class="stat-hours">/7</span>
+                <p class="stat-label">
+                  <span lang="ms">Sokongan Operasi</span>
+                  <span lang="en">Operational Support</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-subtitle">
+            <span lang="ms">PERKHIDMATAN KAMI</span>
+            <span lang="en">OUR SERVICES</span>
+          </div>
+          <h2>
+            <span lang="ms">Penyelesaian Cetakan Premium Untuk Perniagaan</span>
+            <span lang="en">Premium Printing Solutions for Business</span>
+          </h2>
+          <p class="section-desc">
+            <span lang="ms">Kami menyediakan pelbagai pilihan produk cetakan berkualiti tinggi yang disesuaikan mengikut piawaian korporat anda.</span>
+            <span lang="en">We provide a wide range of high-quality printing products tailored to meet your corporate standards.</span>
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Stickers -->
+          <div class="service-card reveal">
+            <div class="service-img-wrapper">
+              <img src="assets/service-sticker.png" alt="Stickers & Labels" class="service-img">
+            </div>
+            <div class="service-info">
+              <h3>
+                <span lang="ms">Pelekat & Label Korporat</span>
+                <span lang="en">Corporate Stickers & Labels</span>
+              </h3>
+              <p>
+                <span lang="ms">Pelekat jenama kalis air dengan pemotongan *kiss-cut* atau *die-cut* yang presisi menggunakan material PP White, PP Transparent, dan Mirrorcoat premium.</span>
+                <span lang="en">Waterproof brand stickers with precise kiss-cut or die-cut using premium PP White, PP Transparent, and Mirrorcoat materials.</span>
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Kalis Air & Tahan Calar</span><span lang="en">Waterproof & Scratch Resistant</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Potongan Laser Tersuai</span><span lang="en">Custom Laser Die-Cutting</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 2: Banners -->
+          <div class="service-card reveal">
+            <div class="service-img-wrapper">
+              <img src="assets/service-banner.png" alt="Banners & Buntings" class="service-img">
+            </div>
+            <div class="service-info">
+              <h3>
+                <span lang="ms">Sistem Banner & Bunting Gergasi</span>
+                <span lang="en">Large Format Banner & Bunting</span>
+              </h3>
+              <p>
+                <span lang="ms">Sistem pengiklanan fizikal berimpak tinggi menggunakan tarpaulin gred industri tebal, paip PVC berkualiti, serta lubang cincin tahan karat.</span>
+                <span lang="en">High-impact physical advertising systems utilizing thick industrial-grade tarpaulin, quality PVC pipes, and rust-proof metal eyelets.</span>
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Material UV Resistant (Kalis Pudar)</span><span lang="en">UV Resistant Material (Fade Proof)</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Pelbagai Jenis Kemasan Kemas</span><span lang="en">Multiple Neat Finishing Styles</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 3: Cards -->
+          <div class="service-card reveal">
+            <div class="service-img-wrapper">
+              <img src="assets/service-card.png" alt="Premium Business Cards" class="service-img">
+            </div>
+            <div class="service-info">
+              <h3>
+                <span lang="ms">Kad Perniagaan Premium</span>
+                <span lang="en">Premium Business Cards</span>
+              </h3>
+              <p>
+                <span lang="ms">Kesan pertama yang luar biasa dengan kad perniagaan tebal (Art Card 310gsm/360gsm) yang dilengkapi kemasan Matte Lamination dan Spot UV eksklusif.</span>
+                <span lang="en">Make an exceptional first impression with thick business cards (310gsm/360gsm Art Card) featuring Matte Lamination and exclusive Spot UV.</span>
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Kemasan Spot UV Berkilat</span><span lang="en">Glossy Spot UV Coating</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Kemasan Matte Eksklusif</span><span lang="en">Premium Matte Finish</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 4: Marketing -->
+          <div class="service-card reveal">
+            <div class="service-img-wrapper">
+              <img src="assets/service-marketing.png" alt="Marketing Materials" class="service-img">
+            </div>
+            <div class="service-info">
+              <h3>
+                <span lang="ms">Bahan Promosi & Pemasaran</span>
+                <span lang="en">Marketing & Promotional Materials</span>
+              </h3>
+              <p>
+                <span lang="ms">Cetak risalah (Flyers), brosur lipatan, profil syarikat, dan buku panduan berkualiti tinggi untuk melengkapkan kempen pemasaran korporat anda.</span>
+                <span lang="en">Print high-quality flyers, folded brochures, company profiles, and booklets to complete your corporate marketing campaigns.</span>
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Kertas Seni Kualiti Tinggi</span><span lang="en">High Quality Art Paper</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Kekemasan Lipatan Presisi</span><span lang="en">Precise Fold Finishing</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 5: Concert & Event Merchandise -->
+          <div class="service-card reveal">
+            <div class="service-img-wrapper">
+              <img src="assets/service-concert.png" alt="Concert & Event Merchandise" class="service-img">
+            </div>
+            <div class="service-info">
+              <h3>
+                <span lang="ms">Merchandise Konsert & Acara</span>
+                <span lang="en">Concert & Event Merchandise</span>
+              </h3>
+              <p>
+                <span lang="ms">Pembekal barangan konsert rasmi berkualiti tinggi yang membantu artis dan penganjur menghasilkan custom t-shirt, tote bag, lanyard, poster, dan barangan promosi.</span>
+                <span lang="en">Official high-quality concert merchandise supplier helping artists and event organizers produce custom t-shirts, tote bags, lanyards, posters, and promotional items.</span>
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Fabrik & Cetakan Tahan Lasak</span><span lang="en">Durable Fabric & Printing Quality</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span lang="ms">Reka Bentuk Kreatif & Eksklusif</span><span lang="en">Creative & Exclusive Designs</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concert Portfolio Section -->
+    <section id="portfolio" class="portfolio-section reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-subtitle">
+            <span lang="ms">PORTFOLIO KONSERT</span>
+            <span lang="en">CONCERT PORTFOLIO</span>
+          </div>
+          <h2>
+            <span lang="ms">Rakan Merchandise & Cetakan Rasmi</span>
+            <span lang="en">Official Merchandise & Printing Partner</span>
+          </h2>
+          <p class="section-desc">
+            <span lang="ms">Kami berbangga menjadi pilihan utama artis dan penganjur konsert tanah air untuk menghasilkan barangan merchandise berkualiti tinggi bagi konsert-konsert berprestij.</span>
+            <span lang="en">We are proud to be the trusted partner for local artists and concert organizers, producing premium concert merchandise for major events.</span>
+          </p>
+        </div>
+
+        <!-- Portfolio Slider Showcase -->
+        <div class="portfolio-carousel-wrapper">
+          <button class="portfolio-nav-btn prev-btn" id="portfolioPrev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          
+          <div class="portfolio-slider-container">
+            <div class="portfolio-slider" id="portfolioSlider">
+              <div class="portfolio-slide">
+                <img src="assets/poster1.png" alt="Rockolusi Kuasa Dua" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster2.png" alt="The Last Kopek - Senario" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster3.png" alt="This Is UNIC" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster4.png" alt="XPDC MetalKestra" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster5.png" alt="Spider Unplugged" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster6.png" alt="Slam & Exists" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster7.png" alt="Pentas Barbarik" class="portfolio-poster">
+              </div>
+              <div class="portfolio-slide">
+                <img src="assets/poster8.png" alt="The Grand Slam Unplugged 2" class="portfolio-poster">
+              </div>
+            </div>
+          </div>
+
+          <button class="portfolio-nav-btn next-btn" id="portfolioNext" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        
+        <!-- Slider Dots -->
+        <div class="portfolio-dots" id="portfolioDots"></div>
+      </div>
+    </section>
+
+    <!-- Why Us Section (Interactive Tabs) -->
+    <section id="why-us" class="why-us-section">
+      <div class="section-container">
+        <div class="why-us-grid">
+          <div class="why-us-content reveal">
+            <div class="section-subtitle">
+              <span lang="ms">KENAPA PILIH KAMI</span>
+              <span lang="en">WHY CHOOSE US</span>
+            </div>
+            <h2>
+              <span lang="ms">Melangkaui Piawaian Percetakan Biasa</span>
+              <span lang="en">Beyond Ordinary Printing Standards</span>
+            </h2>
+            <p class="why-desc">
+              <span lang="ms">Kami memahami bahawa bahan cetakan adalah wajah kepada jenama anda. Oleh itu, kami melabur dalam tiga tunjang utama kecemerlangan kami.</span>
+              <span lang="en">We understand that printed materials are the face of your brand. Therefore, we invest in our three core pillars of excellence.</span>
+            </p>
+            
+            <!-- Tabs Controls -->
+            <div class="tabs-control">
+              <button class="tab-btn active" data-tab="tech">
+                <span lang="ms">Teknologi</span>
+                <span lang="en">Technology</span>
+              </button>
+              <button class="tab-btn" data-tab="materials">
+                <span lang="ms">Material</span>
+                <span lang="en">Materials</span>
+              </button>
+              <button class="tab-btn" data-tab="speed">
+                <span lang="ms">Kelajuan</span>
+                <span lang="en">Speed</span>
+              </button>
+            </div>
+
+            <!-- Tabs Content -->
+            <div class="tabs-content">
+              <!-- Tab 1: Tech -->
+              <div class="tab-pane active" id="tab-tech">
+                <h4>
+                  <span lang="ms">Mesin Cetak Digital Definisi Tinggi</span>
+                  <span lang="en">High-Definition Digital Press</span>
+                </h4>
+                <p>
+                  <span lang="ms">Kami menggunakan enjin cetak ultra-moden yang menyokong resolusi tinggi 2400 dpi dan teknologi kawalan warna pintar. Ini menghasilkan garisan teks yang tajam, kecerunan warna yang lancar, dan ton warna magenta yang amat padat dan konsisten bagi setiap cetakan.</span>
+                  <span lang="en">We utilize ultra-modern printing engines supporting a high resolution of 2400 dpi and smart color control technology. This delivers sharp text lines, smooth color gradients, and exceptionally dense and consistent magenta tones for every print run.</span>
+                </p>
+              </div>
+
+              <!-- Tab 2: Materials -->
+              <div class="tab-pane" id="tab-materials">
+                <h4>
+                  <span lang="ms">Bahan Mentah Gred Industri Terpilih</span>
+                  <span lang="en">Selected Industrial-Grade Materials</span>
+                </h4>
+                <p>
+                  <span lang="ms">Setiap pelekat, banner, dan kertas seni yang kami gunakan telah melepasi ujian ketahanan yang ketat. Daripada gam pelekat yang kuat hingga ke ketebalan kertas kad perniagaan, kami hanya menggunakan bahan yang memastikan ketahanan jangka panjang dan rasa premium apabila disentuh.</span>
+                  <span lang="en">Every sticker, banner, and art paper we use has passed strict durability tests. From strong adhesive glues to business card paper thickness, we only use materials that ensure long-term durability and a premium feel to the touch.</span>
+                </p>
+              </div>
+
+              <!-- Tab 3: Speed -->
+              <div class="tab-pane" id="tab-speed">
+                <h4>
+                  <span lang="ms">Proses Pintar & Penghantaran Cepat</span>
+                  <span lang="en">Smart Workflow & Swift Delivery</span>
+                </h4>
+                <p>
+                  <span lang="ms">Melalui sistem pengurusan pengeluaran berautomasi, kami meminimumkan pembaziran masa dan ralat manusia. Kami menjamin proses pengeluaran yang cekap untuk membolehkan penghantaran barangan cetak anda sampai ke pintu pejabat anda mengikut jadual yang dijanjikan.</span>
+                  <span lang="en">Through our automated production management system, we minimize wasted time and human error. We guarantee an efficient production process to ensure your printed materials arrive at your office doorstep on schedule.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="why-us-visual reveal">
+            <div class="visual-accent-box">
+              <div class="accent-glow"></div>
+              <div class="visual-content-inner">
+                <i class="fa-solid fa-microchip accent-icon"></i>
+                <h3>
+                  <span lang="ms">Automasi Industri 4.0</span>
+                  <span lang="en">Industry 4.0 Automation</span>
+                </h3>
+                <p>
+                  <span lang="ms">Sistem integrasi kami menyelaraskan rekaan grafik terus ke mesin cetak tanpa kelewatan manual.</span>
+                  <span lang="en">Our integration systems streamline graphic designs directly to the printing press without manual delays.</span>
+                </p>
+                <div class="visual-tag-grid">
+                  <span class="v-tag">100% Digital</span>
+                  <span class="v-tag">Smart Fitting</span>
+                  <span class="v-tag">Color Matching</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-subtitle">
+            <span lang="ms">TESTIMONI</span>
+            <span lang="en">TESTIMONIALS</span>
+          </div>
+          <h2>
+            <span lang="ms">Apa Kata Klien Korporat Kami</span>
+            <span lang="en">What Our Corporate Clients Say</span>
+          </h2>
+        </div>
+
+        <div class="testimonial-slider-container reveal">
+          <div class="testimonial-slider" id="testimonialSlider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="feedback">
+                <span lang="ms">"Kami menempah 5,000 pelekat label korporat untuk produk kosmetik kami. Hasil cetakan magenta sangat padat dan gam pelekatnya sangat kuat. Servis yang sangat profesional!"</span>
+                <span lang="en">"We ordered 5,000 corporate label stickers for our cosmetic products. The magenta print is extremely rich and the adhesive is very strong. Highly professional service!"</span>
+              </p>
+              <div class="client-info">
+                <div class="client-avatar">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <h5 class="client-name">Sarah Aminah</h5>
+                  <span class="client-title">CEO, Luminance Beauty</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="feedback">
+                <span lang="ms">"Kad perniagaan premium dengan Spot UV yang kami tempah mendapat pujian daripada rakan kongsi kami. Kualiti potongan sangat kemas dan kemasan mattenya terasa sangat eksklusif."</span>
+                <span lang="en">"The premium business cards with Spot UV we ordered received high praise from our partners. The cutting quality is very clean and the matte finish feels extremely exclusive."</span>
+              </p>
+              <div class="client-info">
+                <div class="client-avatar">
+                  <i class="fa-solid fa-user-gear"></i>
+                </div>
+                <div>
+                  <h5 class="client-name">Ir. Hisham Razak</h5>
+                  <span class="client-title">Director, Apex Engineering</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="feedback">
+                <span lang="ms">"Banner pengiklanan untuk pelancaran cawangan baharu kami siap dalam masa 24 jam. Kualiti tarpaulin tebal dan cetakan tidak pudar walaupun diletakkan di bawah cahaya matahari."</span>
+                <span lang="en">"The advertising banner for our new branch launch was ready within 24 hours. The tarpaulin quality is thick and the print doesn't fade even under direct sunlight."</span>
+              </p>
+              <div class="client-info">
+                <div class="client-avatar">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                  <h5 class="client-name">Marcus Tan</h5>
+                  <span class="client-title">Marketing Lead, NextGen Retail</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slider Navigation Dots -->
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="contact-grid">
+          <div class="contact-info-panel reveal">
+            <div class="section-subtitle">
+              <span lang="ms">HUBUNGI KAMI</span>
+              <span lang="en">CONTACT US</span>
+            </div>
+            <h2>
+              <span lang="ms">Mulakan Projek Cetakan Anda Hari Ini</span>
+              <span lang="en">Start Your Print Project Today</span>
+            </h2>
+            <p>
+              <span lang="ms">Hubungi pasukan perunding kami untuk mendapatkan nasihat spesifikasi bahan, pilihan kemasan, dan sebut harga korporat secara percuma.</span>
+              <span lang="en">Contact our consulting team to get free advice on material specifications, finishing options, and corporate quotations.</span>
+            </p>
+            
+            <div class="contact-methods">
+              <div class="c-method-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4 lang="ms">Lokasi Kami</h4><h4 lang="en">Our Location</h4>
+                  <p>3A, Jalan AWF 2, Ampang Waterfront, 68000 Ampang Selangor</p>
+                </div>
+              </div>
+              <div class="c-method-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h4 lang="ms">Talian Telefon</h4><h4 lang="en">Phone Line</h4>
+                  <p>+6018-943 5343</p>
+                </div>
+              </div>
+              <div class="c-method-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <h4 lang="ms">E-mel</h4><h4 lang="en">Email</h4>
+                  <p>myprinitums@gmail.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Direct CTA -->
+            <a href="https://wa.me/60189435343?text=Hi%20Printiums,%20saya%20ingin%20tanya%20tentang%20cetakan%20korporat" target="_blank" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span lang="ms">Hubungi via WhatsApp</span>
+              <span lang="en">Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="contact-form-panel reveal">
+            <h3 lang="ms">Hantar Pertanyaan</h3><h3 lang="en">Send an Inquiry</h3>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" required placeholder=" ">
+                  <label for="name">
+                    <span lang="ms">Nama Penuh</span><span lang="en">Full Name</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" required placeholder=" ">
+                  <label for="email">
+                    <span lang="ms">Alamat E-mel</span><span lang="en">Email Address</span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <input type="text" id="company" placeholder=" ">
+                <label for="company">
+                  <span lang="ms">Nama Syarikat (Opsional)</span><span lang="en">Company Name (Optional)</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <select id="serviceRequired" required>
+                  <option value="" disabled selected lang="ms">Pilih Servis Cetakan</option>
+                  <option value="" disabled selected lang="en">Select Printing Service</option>
+                  <option value="sticker" lang="ms">Pelekat & Label</option>
+                  <option value="sticker" lang="en">Stickers & Labels</option>
+                  <option value="banner" lang="ms">Banner & Bunting</option>
+                  <option value="banner" lang="en">Banner & Bunting</option>
+                  <option value="card" lang="ms">Kad Perniagaan Premium</option>
+                  <option value="card" lang="en">Premium Business Cards</option>
+                  <option value="marketing" lang="ms">Bahan Pemasaran (Flyers/Buku)</option>
+                  <option value="marketing" lang="en">Marketing Materials (Flyers/Books)</option>
+                  <option value="concert" lang="ms">Merchandise Konsert & Acara</option>
+                  <option value="concert" lang="en">Concert & Event Merchandise</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea id="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">
+                  <span lang="ms">Perincian Tempahan / Soalan...</span><span lang="en">Project Details / Questions...</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span lang="ms">Hantar Mesej</span><span lang="en">Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+            <div id="formFeedback" class="form-feedback"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <img src="logo.png" alt="Printiums Logo" class="brand-logo">
+          <span class="brand-name">Printiums</span>
+        </a>
+        <p class="footer-desc">
+          <span lang="ms">Penyedia perkhidmatan percetakan korporat premium bercirikan teknologi tinggi, mengutamakan ketepatan warna dan kualiti kemasan fizikal.</span>
+          <span lang="en">Premium corporate printing provider leveraging advanced tech, focusing on color precision and superior physical finish quality.</span>
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 lang="ms">Navigasi</h4><h4 lang="en">Navigation</h4>
+        <a href="#hero"><span lang="ms">Utama</span><span lang="en">Home</span></a>
+        <a href="#about"><span lang="ms">Mengenai Kami</span><span lang="en">About Us</span></a>
+        <a href="#services"><span lang="ms">Servis Cetak</span><span lang="en">Services</span></a>
+        <a href="#why-us"><span lang="ms">Kelebihan</span><span lang="en">Why Us</span></a>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 lang="ms">Perkhidmatan</h4><h4 lang="en">Services</h4>
+        <a href="#services"><span lang="ms">Sticker & Label</span><span lang="en">Stickers & Labels</span></a>
+        <a href="#services"><span lang="ms">Banner & Bunting</span><span lang="en">Banners & Buntings</span></a>
+        <a href="#services"><span lang="ms">Kad Perniagaan</span><span lang="en">Business Cards</span></a>
+        <a href="#services"><span lang="ms">Flyers & Booklet</span><span lang="en">Flyers & Booklets</span></a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 lang="ms">Langgan Buletin</h4><h4 lang="en">Newsletter</h4>
+        <p lang="ms">Terima tips rekaan cetak korporat dan promosi bermusim terus ke e-mel anda.</p>
+        <p lang="en">Receive corporate print design tips and seasonal promotions directly in your inbox.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" required placeholder="Email Address">
+          <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-inner">
+        <p>&copy; 2026 Printiums Enterprise (JM0874591-A). All Rights Reserved.</p>
+        <p>
+          <span lang="ms">Direka dengan penuh ketepatan warna.</span>
+          <span lang="en">Designed with maximum color precision.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

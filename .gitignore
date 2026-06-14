@@ -1,0 +1,12 @@
+# Windows System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary Script Files
+inspect.ps1
+crop.ps1
+inspect_img.py
+
+# Logs
+*.log
