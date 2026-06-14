@@ -1471,6 +1471,33 @@ img {
   .badge-title { font-size: 0.8rem; }
   .badge-sub { font-size: 0.7rem; }
   
-  .badge-1 { left: -5%; }
-  .badge-2 { right: -2%; }
+  .badge-1 { left: 15px; }
+  .badge-2 { right: 15px; }
+
+  /* Mobile responsive optimizations to prevent horizontal scroll and text overflow */
+  h1 { font-size: 2.2rem !important; }
+  h2 { font-size: 1.8rem !important; }
+  
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+  
+  .feedback {
+    font-size: 1.15rem !important;
+  }
+  
+  .tab-btn {
+    padding: 10px 4px;
+    font-size: 0.85rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .stat-card {
+    padding: 24px 16px;
+  }
 }
