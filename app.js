@@ -346,6 +346,7 @@ function initPortfolioSlider() {
   const slides = slider.querySelectorAll('.portfolio-slide');
   const totalSlides = slides.length;
   let currentIndex = 0;
+  let autoSlideTimer;
 
   // Calculate how many items are visible based on screen size
   function getVisibleCount() {
@@ -404,6 +405,9 @@ function initPortfolioSlider() {
     prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
     nextBtn.style.opacity = currentIndex === maxIndex ? '0.3' : '1';
     nextBtn.style.pointerEvents = currentIndex === maxIndex ? 'none' : 'auto';
+
+    // Reset auto-slide timer whenever the slide updates
+    resetAutoplay();
   }
 
   prevBtn.addEventListener('click', () => {
@@ -437,7 +441,28 @@ function initPortfolioSlider() {
     }, 100);
   });
 
-  // Initial layout
+  // Autoplay functions
+  function startAutoplay() {
+    autoSlideTimer = setInterval(() => {
+      const maxIndex = getMaxIndex();
+      if (maxIndex <= 0) return;
+      
+      let nextIndex = currentIndex + 1;
+      if (nextIndex > maxIndex) {
+        nextIndex = 0; // Wrap back to beginning
+      }
+      currentIndex = nextIndex;
+      updateSlider();
+    }, 4000); // Slide every 4 seconds
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoSlideTimer);
+    startAutoplay();
+  }
+
+  // Initial layout & start auto-sliding
   generateDots();
   updateSlider();
+  startAutoplay();
 }
