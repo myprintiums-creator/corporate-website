@@ -14,6 +14,9 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- jsPDF Library for Vector PDF Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -149,10 +152,11 @@
               <span lang="en">Explore Services</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span lang="ms">Bincang Projek</span>
-              <span lang="en">Discuss Project</span>
-            </a>
+            <button onclick="generatePDFProfile()" class="btn btn-secondary">
+              <i class="fa-solid fa-file-pdf" style="color: var(--color-magenta);"></i>
+              <span lang="ms">Profil Syarikat (PDF)</span>
+              <span lang="en">Company Profile (PDF)</span>
+            </button>
           </div>
         </div>
         <div class="hero-visual reveal">
@@ -213,6 +217,11 @@
               <span lang="ms">Kami juga merupakan supplier merchandise konsert yang membantu artis dan penganjur menghasilkan merchandise berkualiti seperti t-shirt, tote bag, lanyard, poster dan pelbagai barangan promosi. Dengan gabungan kreativiti, kualiti dan penghantaran yang pantas, Printiums menjadi pilihan bagi pelanggan yang mencari printing service, corporate gift supplier dan merchandise supplier di Malaysia.</span>
               <span lang="en">We are also a concert merchandise supplier, helping artists and organizers produce high-quality merchandise such as t-shirts, tote bags, lanyards, posters, and various promotional products. With a combination of creativity, quality, and fast delivery, Printiums is the preferred choice for clients seeking printing services, corporate gift suppliers, and merchandise suppliers in Malaysia.</span>
             </p>
+            <button onclick="generatePDFProfile()" class="btn btn-outline" style="margin-top: 16px;">
+              <i class="fa-solid fa-file-pdf" style="color: var(--color-magenta); margin-right: 8px;"></i>
+              <span lang="ms">Muat Turun Profil Syarikat (PDF/AI)</span>
+              <span lang="en">Download Company Profile (PDF/AI)</span>
+            </button>
           </div>
           <div class="stats-container reveal">
             <div class="stats-grid">
