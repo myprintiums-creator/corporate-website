@@ -24,8 +24,8 @@ function initLanguageSwitcher() {
   const desktopToggle = document.getElementById('langToggle');
   const mobileToggle = document.getElementById('mobileLangToggle');
 
-  // Load saved language or default to Malay
-  const savedLang = localStorage.getItem('printiums_lang') || 'ms';
+  // Load saved language or default to English
+  const savedLang = localStorage.getItem('printiums_lang') || 'en';
   setLanguage(savedLang);
 
   // Desktop Switcher Event
