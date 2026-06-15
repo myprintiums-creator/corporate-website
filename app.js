@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabsSystem();
   initTestimonialSlider();
   initPortfolioSlider();
+  initHeroSlider();
 });
 
 /* ==========================================================================
@@ -465,4 +466,21 @@ function initPortfolioSlider() {
   generateDots();
   updateSlider();
   startAutoplay();
+}
+
+/* ==========================================================================
+   10. Auto-Sliding Hero Poster Showcase (Right Side of Hero Section)
+   ========================================================================== */
+function initHeroSlider() {
+  const slider = document.getElementById('heroSlider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.hero-slide-item');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+  
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 3000); // Slide every 3 seconds
 }
